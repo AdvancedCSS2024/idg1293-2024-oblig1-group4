@@ -6,25 +6,31 @@ body {
     margin: 0;
 }
 
-.header * {
+.header {
     background-color: rgb(255, 255, 255);
     font-size: 1.5em;
     text-decoration: none;
     vertical-align: middle;
     text-align: justify;
     display: flex;
-
-    &__menu {
-        display: flex;
-        max-width: 100%;
-    }
+    list-style: none;
 
     &__logo {
         width: 60px;
     }
 
     &__icons {
-        width: 60px;
+        width: 50px;
     }
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        list-style: none;
+    }
+
 }
 
+.search {
+    margin-left: 5%;
+}
