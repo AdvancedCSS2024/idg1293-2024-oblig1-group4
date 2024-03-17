@@ -36,7 +36,7 @@ body {
             }
         }
 
-        &__form {
+        &__main {
             display: flex;
             flex-direction: column;
 
@@ -46,10 +46,26 @@ body {
                 line-height: 41px;
             }
 
-            &__input {
+            &__form {
                 display: flex;
                 flex-direction: column;
                 font-size: "finn-regular";
+
+                &__input {
+                    background-color: common.$inputGray;
+                    color: common.$stoneGrayText;
+                    padding: 27px 12px 10px;
+                    border: none;
+                    text-align: start;
+                    border-bottom: 1px common.$stoneGrayText;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+                &__submit {
+                    border: none;
+                    background-color: common.$commonBlue;
+                    
+                }
             }
         }
     }

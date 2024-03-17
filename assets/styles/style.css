@@ -35,19 +35,33 @@ body .login-card__nav__schibsted-logo img {
   width: 100%;
   max-width: 110px;
 }
-body .login-card__form {
+body .login-card__main {
   display: flex;
   flex-direction: column;
 }
-body .login-card__form__h1 {
+body .login-card__main__h1 {
   font-family: "finn-bold";
   font-size: 34px;
   line-height: 41px;
 }
-body .login-card__form__input {
+body .login-card__main__form {
   display: flex;
   flex-direction: column;
   font-size: "finn-regular";
+}
+body .login-card__main__form__input {
+  background-color: #CCCCCC;
+  color: #767676;
+  padding: 27px 12px 10px;
+  border: none;
+  text-align: start;
+  border-bottom: 1px #767676;
+  font-size: 14px;
+  line-height: 18px;
+}
+body .login-card__main__form__submit {
+  border: none;
+  background-color: #0063fb;
 }
 body .notifications-card {
   background-color: #F1F9FF;
@@ -62,4 +76,4 @@ body .notifications-card__content {
   padding: 0 10%;
   font-family: "finn-regular";
   text-align: center;
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=style.css.map */
