@@ -1,1 +1,11 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
+
+@use "common";
+
+body {
+    margin: 0;  
+}
+
+.search {
+    margin-left: 5%;
+}
