@@ -1,0 +1,72 @@
+// USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
+@use "common.scss";
+
+// Login page
+body {
+    background-color: common.$backgroundGray;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+    .login-card {
+        background-color: common.$white;
+        padding: 3%;
+        margin: 10% 5% 10% 0;
+        width: 40%;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px common.$shadowGray;
+
+        &__nav {
+            display: flex;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: center;
+
+            &__finn-logo img {
+                width: 100%;
+                max-width: 40px;
+                // padding: 10% 0 0 0;
+            }
+
+            &__schibsted-logo img {
+                width: 100%;
+                max-width: 110px;
+                // padding: 20% 20% 0 0;
+            }
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+
+            &__h1 {
+                font-family: "finn-bold";
+                font-size: 34px;
+                line-height: 41px;
+            }
+
+            &__input {
+                display: flex;
+                flex-direction: column;
+                font-size: "finn-regular";
+            }
+        }
+    }
+    .notifications-card {
+        background-color: common.$aqua;
+        margin-top: 12%;
+
+        &__iphone {
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto;
+        }
+
+        &__content {
+            padding: 0 10%;
+            font-family: "finn-regular";
+            text-align: center;
+        }
+    }
+}
