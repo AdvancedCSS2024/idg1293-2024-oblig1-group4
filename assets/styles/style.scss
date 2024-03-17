@@ -14,7 +14,10 @@ body {
     vertical-align: middle;
     text-align: justify;
     display: flex;
-    list-style: none;
+
+    //button {
+    //    &:hover
+    //}
 
     &__logo {
         width: 60px;
