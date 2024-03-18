@@ -8,6 +8,10 @@ $black: black;
 $backgroundGray: #F6F8FB;
 $aqua: #F1F9FF; 
 $shadowGray: #ADADAD;
+$commonBlue:#0063fb;
+$inputGray: #FAFAFA;
+$stoneGrayText: #767676;
+
 
 // Font:
 @font-face {
@@ -20,28 +24,89 @@ $shadowGray: #ADADAD;
     src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2);
 }
 
-// Navbar: (CECILIE)
-.header {
-    background-color: rgb(255, 255, 255);
-    font-size: 1.5em;
-    text-decoration: none;
-    vertical-align: middle;
-    text-align: justify;
+
+// Login page (KAJA)
+body {
+    background-color: common.$backgroundGray;
     display: flex;
-    list-style: none;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
 
-    &__logo {
-        width: 60px;
+    .login-card {
+        background-color: common.$white;
+        padding: 3%;
+        margin: 10% 5% 10% 0;
+        width: 40%;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px common.$shadowGray;
+
+        &__nav {
+            display: flex;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: center;
+
+            &__finn-logo img {
+                width: 100%;
+                max-width: 40px;
+                // padding: 10% 0 0 0;
+            }
+
+            &__schibsted-logo img {
+                width: 100%;
+                max-width: 110px;
+                // padding: 20% 20% 0 0;
+            }
+        }
+
+        &__main {
+            display: flex;
+            flex-direction: column;
+
+            &__h1 {
+                font-family: "finn-bold";
+                font-size: 34px;
+                line-height: 41px;
+            }
+
+            &__form {
+                display: flex;
+                flex-direction: column;
+                font-size: "finn-regular";
+
+                &__input {
+                    background-color: common.$inputGray;
+                    color: common.$stoneGrayText;
+                    padding: 27px 12px 10px;
+                    border: none;
+                    text-align: start;
+                    border-bottom: 1px common.$stoneGrayText;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+                &__submit {
+                    border: none;
+                    background-color: common.$commonBlue;
+                    
+                }
+            }
+        }
     }
+    .notifications-card {
+        background-color: common.$aqua;
+        margin-top: 12%;
 
-    &__icons {
-        width: 50px;
+        &__iphone {
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto;
+        }
+
+        &__content {
+            padding: 0 10%;
+            font-family: "finn-regular";
+            text-align: center;
+        }
     }
-
-    &__list {
-        list-style-type: none;
-        display: flex;
-        list-style: none;
-    }
-
 }
