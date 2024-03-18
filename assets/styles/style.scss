@@ -2,12 +2,26 @@
 
 @use "common";
 
-
+// CECILIE
+body {
+    margin: 0;  
+}
 
 
 // Search bar screenshot1
 .search {
     margin-left: 5%;
+}
+
+// For the advertisement in Finn
+.card {
+    vertical-align: middle;
+    display: flex;
+    &__ad {
+        max-width: 100%;
+        width: 25%;
+        border-radius: 3%;
+    }
 }
 
 

@@ -26,17 +26,29 @@ $activeLogin: #6381b4;
 }
 
 // Cecilie
+body {
+    margin: 0;
+    background-color: $backgroundGray;
+    font-family: "finn-regular";
+    margin: 0;
+}
+
+// For the header in Screenshot 1
 .header {
-    background-color: #fff;
     font-size: 1.5em;
     text-decoration: none;
-    vertical-align: middle;
-    text-align: justify;
-    display: flex;
+    display: inline;
     list-style: none;
 
+    align-items: center;
+    
+        
     &__logo {
-        width: 60px;
+    width: 60px;
+        &__link {
+            text-decoration: none;
+        }
+
     }
 
     &__icons {
@@ -44,17 +56,28 @@ $activeLogin: #6381b4;
     }
 
     &__list {
-        list-style-type: none;
-        display: flex;
-        list-style: none;
+    list-style-type: none;
+    display: flex;
+    list-style: none;
+    font-size: 15px;
     }
 }
 
-body {
-    margin: 0;
-    font-family: "finn-regular";
-    margin: 0;
+
+
+// For the icons
+.icons {
+    display: flex;
+    &__svg {
+        flex-direction: column;
+        text-decoration: none;
+    }
 }
+
+  .search {
+    text-align: center;
+}
+
 
 // Login page (KAJA)
 
@@ -166,4 +189,4 @@ body {
         font-family: "finn-regular";
         text-align: center;
     }
-}
+
