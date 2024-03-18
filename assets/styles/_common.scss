@@ -24,6 +24,34 @@ $stoneGrayText: #767676;
     src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2);
 }
 
+// Cecilie
+.header {
+    background-color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    vertical-align: middle;
+    text-align: justify;
+    display: flex;
+    list-style: none;
+        
+    &__logo {
+    width: 60px;
+    }
+    
+    &__icons {
+    width: 50px;
+    }
+    
+    &__list {
+    list-style-type: none;
+    display: flex;
+    list-style: none;
+    }
+}
+
+body {
+    margin: 0;
+}
 
 // Login page (KAJA)
 body {
