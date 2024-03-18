@@ -72,12 +72,7 @@ body {
 
 
 // Login page (KAJA)
-body {
-    background-color: $backgroundGray;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
+
 
     .login-card {
         background-color: $white;
