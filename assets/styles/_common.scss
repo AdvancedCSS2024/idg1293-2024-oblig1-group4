@@ -25,8 +25,13 @@ $stoneGrayText: #767676;
 }
 
 // Cecilie
+body {
+    margin: 0;
+}
+
+// For the header in Screenshot 1
 .header {
-    background-color: #fff;
+    background-color: $backgroundGray;
     font-size: 1.5em;
     text-decoration: none;
     vertical-align: middle;
@@ -49,9 +54,22 @@ $stoneGrayText: #767676;
     }
 }
 
-body {
-    margin: 0;
+// For the advertisement in Finn
+.card {
+    vertical-align: middle;
+    display: inline-block;
+    &__ad {
+        max-width: 100%;
+        width: 60px;
+    }
 }
+
+// For the icons
+.icons {
+    display: block;
+}
+
+
 
 // Login page (KAJA)
 body {
