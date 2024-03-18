@@ -1,17 +1,18 @@
 // YOU MUST USE BEM HERE
-// IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE 
+// IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE
 // Example: input, button, card ...
 
 // Colors:
 $white: white;
 $black: black;
-$backgroundGray: #F6F8FB;
-$aqua: #F1F9FF; 
-$shadowGray: #ADADAD;
-$commonBlue:#0063fb;
-$inputGray: #FAFAFA;
+$backgroundGray: #f6f8fb;
+$aqua: #f1f9ff;
+$shadowGray: #adadad;
+$commonBlue: #0063fb;
+$hoverBlue: #003e9d;
+$inputGray: #fafafa;
 $stoneGrayText: #767676;
-
+$activeLogin: #6381b4;
 
 // Font:
 @font-face {
@@ -28,6 +29,8 @@ $stoneGrayText: #767676;
 body {
     margin: 0;
     background-color: $backgroundGray;
+    font-family: "finn-regular";
+    margin: 0;
 }
 
 // For the header in Screenshot 1
@@ -36,6 +39,7 @@ body {
     text-decoration: none;
     display: inline;
     list-style: none;
+
     align-items: center;
     
         
@@ -44,12 +48,13 @@ body {
         &__link {
             text-decoration: none;
         }
+
     }
-    
+
     &__icons {
-    width: 50px;
+        width: 50px;
     }
-    
+
     &__list {
     list-style-type: none;
     display: flex;
@@ -69,88 +74,119 @@ body {
     }
 }
 
-.search {
+  .search {
     text-align: center;
 }
 
 
 // Login page (KAJA)
 
+.login-card {
+    background-color: $white;
+    padding: 3%;
+    margin: 10% 5% 10% 0;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px $shadowGray;
 
-    .login-card {
-        background-color: $white;
-        padding: 3%;
-        margin: 10% 5% 10% 0;
-        width: 40%;
-        border-radius: 10px;
-        box-shadow: 0 10px 30px $shadowGray;
+    &__nav {
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
 
-        &__nav {
-            display: flex;
-            margin: 0 auto;
-            justify-content: space-between;
-            align-items: center;
-
-            &__finn-logo img {
-                width: 100%;
-                max-width: 40px;
-                // padding: 10% 0 0 0;
-            }
-
-            &__schibsted-logo img {
-                width: 100%;
-                max-width: 110px;
-                // padding: 20% 20% 0 0;
-            }
+        &__finn-logo img {
+            width: 100%;
+            max-width: 40px;
+            // padding: 10% 0 0 0;
         }
 
-        &__main {
+        &__schibsted-logo img {
+            width: 100%;
+            max-width: 110px;
+            // padding: 20% 20% 0 0;
+        }
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+
+        &__h1 {
+            font-family: "finn-bold";
+            font-size: 34px;
+            line-height: 41px;
+        }
+
+        &__form {
             display: flex;
             flex-direction: column;
+            font-size: "finn-regular";
 
-            &__h1 {
-                font-family: "finn-bold";
-                font-size: 34px;
-                line-height: 41px;
+            &__input {
+                background-color: $inputGray;
+                color: $stoneGrayText;
+                vertical-align: text-top;
+                padding: 27px 12px 10px;
+                border: none;
+                text-align: start;
+                border-bottom: 1px $stoneGrayText;
+                font-size: 14px;
+                line-height: 18px;
             }
+            &__submit {
+                border: none;
+                background-color: $commonBlue;
+                color: $white;
+                font-size: 17px;
+                margin: 16px 0 0;
+                padding: 16px;
+                border-radius: 10px;
 
-            &__form {
-                display: flex;
-                flex-direction: column;
-                font-size: "finn-regular";
-
-                &__input {
-                    background-color: $inputGray;
-                    color: $stoneGrayText;
-                    padding: 27px 12px 10px;
-                    border: none;
-                    text-align: start;
-                    border-bottom: 1px $stoneGrayText;
-                    font-size: 14px;
-                    line-height: 18px;
+                &:hover {
+                    background-color: $hoverBlue;
+                    box-shadow: 2px 2px 10px $shadowGray;
                 }
-                &__submit {
-                    border: none;
-                    background-color: $commonBlue;
-                    
+
+                &:active {
+                    background-color: $activeLogin;
+                    box-shadow: 2px 2px 10px $shadowGray;
+                }
+
+                &:visited {
+                    background-color: $shadowGray;
+                    color: $stoneGrayText;
+                }
+            }
+            &__create-account {
+                font-size: 17px;
+                margin: 16px 0 0;
+                padding: 16px;
+                border-radius: 10px;
+                color: $commonBlue;
+                font-family: "finn-bold";
+
+                &:hover {
+                    box-shadow: 2px 2px 10px $shadowGray;
+                    font-family: "finn-bold";
                 }
             }
         }
     }
-    .notifications-card {
-        background-color: $aqua;
-        margin-top: 12%;
+}
+.notifications-card {
+    background-color: $aqua;
+    margin-top: 12%;
 
-        &__iphone {
-            width: 100%;
-            max-width: 200px;
-            margin: 0 auto;
-        }
+    &__iphone {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+    }
 
-        &__content {
-            padding: 0 10%;
-            font-family: "finn-regular";
-            text-align: center;
-        }
+    &__content {
+        padding: 0 10%;
+        font-family: "finn-regular";
+        text-align: center;
     }
 

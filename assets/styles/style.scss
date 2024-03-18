@@ -7,6 +7,7 @@ body {
     margin: 0;  
 }
 
+
 // Search bar screenshot1
 .search {
     margin-left: 5%;
@@ -28,9 +29,27 @@ body {
 // LOGIN PAGE (KAJA)
 
 .login-page {
-    background-color: common.$backgroundGray;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+}
+
+// DEMO PAGE
+
+h3 {
+    padding: 0 0 5% 0;
+}
+
+.demo-main {
+    padding: 10%;
+}
+
+.login-buttons {
+    display: flex;
+    padding-bottom: 5%;
+
+    &__card {
+        padding: 0 5% 0 0;
+    }
 }
