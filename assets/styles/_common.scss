@@ -27,20 +27,23 @@ $stoneGrayText: #767676;
 // Cecilie
 body {
     margin: 0;
+    background-color: $backgroundGray;
 }
 
 // For the header in Screenshot 1
 .header {
-    background-color: $backgroundGray;
     font-size: 1.5em;
     text-decoration: none;
-    vertical-align: middle;
-    text-align: justify;
-    display: flex;
+    display: inline;
     list-style: none;
+    align-items: center;
+    
         
     &__logo {
     width: 60px;
+        &__link {
+            text-decoration: none;
+        }
     }
     
     &__icons {
@@ -51,24 +54,24 @@ body {
     list-style-type: none;
     display: flex;
     list-style: none;
+    font-size: 15px;
     }
 }
 
-// For the advertisement in Finn
-.card {
-    vertical-align: middle;
-    display: inline-block;
-    &__ad {
-        max-width: 100%;
-        width: 60px;
-    }
-}
+
 
 // For the icons
 .icons {
-    display: block;
+    display: flex;
+    &__svg {
+        flex-direction: column;
+        text-decoration: none;
+    }
 }
 
+.search {
+    text-align: center;
+}
 
 
 // Login page (KAJA)
@@ -150,4 +153,4 @@ body {
             text-align: center;
         }
     }
-}
+
