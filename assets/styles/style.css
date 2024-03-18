@@ -6,52 +6,73 @@
   font-family: "finn-bold";
   src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2);
 }
-body {
-  background-color: #F6F8FB;
+.header {
+  background-color: #fff;
+  font-size: 1.5em;
+  text-decoration: none;
+  vertical-align: middle;
+  text-align: justify;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
+  list-style: none;
 }
-body .login-card {
+.header__logo {
+  width: 60px;
+}
+.header__icons {
+  width: 50px;
+}
+.header__list {
+  list-style-type: none;
+  display: flex;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  font-family: "finn-regular";
+  margin: 0;
+}
+
+.login-card {
   background-color: white;
   padding: 3%;
   margin: 10% 5% 10% 0;
   width: 40%;
   border-radius: 10px;
-  box-shadow: 0 10px 30px #ADADAD;
+  box-shadow: 0 10px 30px #adadad;
 }
-body .login-card__nav {
+.login-card__nav {
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
 }
-body .login-card__nav__finn-logo img {
+.login-card__nav__finn-logo img {
   width: 100%;
   max-width: 40px;
 }
-body .login-card__nav__schibsted-logo img {
+.login-card__nav__schibsted-logo img {
   width: 100%;
   max-width: 110px;
 }
-body .login-card__main {
+.login-card__main {
   display: flex;
   flex-direction: column;
 }
-body .login-card__main__h1 {
+.login-card__main__h1 {
   font-family: "finn-bold";
   font-size: 34px;
   line-height: 41px;
 }
-body .login-card__main__form {
+.login-card__main__form {
   display: flex;
   flex-direction: column;
   font-size: "finn-regular";
 }
-body .login-card__main__form__input {
-  background-color: #FAFAFA;
+.login-card__main__form__input {
+  background-color: #fafafa;
   color: #767676;
+  vertical-align: text-top;
   padding: 27px 12px 10px;
   border: none;
   text-align: start;
@@ -59,29 +80,78 @@ body .login-card__main__form__input {
   font-size: 14px;
   line-height: 18px;
 }
-body .login-card__main__form__submit {
+.login-card__main__form__submit {
   border: none;
   background-color: #0063fb;
+  color: white;
+  font-size: 17px;
+  margin: 16px 0 0;
+  padding: 16px;
+  border-radius: 10px;
 }
-body .notifications-card {
-  background-color: #F1F9FF;
+.login-card__main__form__submit:hover {
+  background-color: #003e9d;
+  box-shadow: 2px 2px 10px #adadad;
+}
+.login-card__main__form__submit:active {
+  background-color: #6381b4;
+  box-shadow: 2px 2px 10px #adadad;
+}
+.login-card__main__form__submit:visited {
+  background-color: #adadad;
+  color: #767676;
+}
+.login-card__main__form__create-account {
+  font-size: 17px;
+  margin: 16px 0 0;
+  padding: 16px;
+  border-radius: 10px;
+  color: #0063fb;
+  font-family: "finn-bold";
+}
+.login-card__main__form__create-account:hover {
+  box-shadow: 2px 2px 10px #adadad;
+  font-family: "finn-bold";
+}
+
+.notifications-card {
+  background-color: #f1f9ff;
   margin-top: 12%;
 }
-body .notifications-card__iphone {
+.notifications-card__iphone {
   width: 100%;
   max-width: 200px;
   margin: 0 auto;
 }
-body .notifications-card__content {
+.notifications-card__content {
   padding: 0 10%;
   font-family: "finn-regular";
   text-align: center;
 }
 
-body {
-  margin: 0;
-}
-
 .search {
   margin-left: 5%;
+}
+
+.login-page {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  padding: 0 0 5% 0;
+}
+
+.demo-main {
+  padding: 10%;
+}
+
+.login-buttons {
+  display: flex;
+  padding-bottom: 5%;
+}
+.login-buttons__card {
+  padding: 0 5% 0 0;
 }/*# sourceMappingURL=style.css.map */
