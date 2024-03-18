@@ -27,19 +27,19 @@ $stoneGrayText: #767676;
 
 // Login page (KAJA)
 body {
-    background-color: common.$backgroundGray;
+    background-color: $backgroundGray;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
 
     .login-card {
-        background-color: common.$white;
+        background-color: $white;
         padding: 3%;
         margin: 10% 5% 10% 0;
         width: 40%;
         border-radius: 10px;
-        box-shadow: 0 10px 30px common.$shadowGray;
+        box-shadow: 0 10px 30px $shadowGray;
 
         &__nav {
             display: flex;
@@ -76,25 +76,25 @@ body {
                 font-size: "finn-regular";
 
                 &__input {
-                    background-color: common.$inputGray;
-                    color: common.$stoneGrayText;
+                    background-color: $inputGray;
+                    color: $stoneGrayText;
                     padding: 27px 12px 10px;
                     border: none;
                     text-align: start;
-                    border-bottom: 1px common.$stoneGrayText;
+                    border-bottom: 1px $stoneGrayText;
                     font-size: 14px;
                     line-height: 18px;
                 }
                 &__submit {
                     border: none;
-                    background-color: common.$commonBlue;
+                    background-color: $commonBlue;
                     
                 }
             }
         }
     }
     .notifications-card {
-        background-color: common.$aqua;
+        background-color: $aqua;
         margin-top: 12%;
 
         &__iphone {
