@@ -13,6 +13,8 @@ $hoverBlue: #003e9d;
 $inputGray: #fafafa;
 $stoneGrayText: #767676;
 $activeLogin: #6381b4;
+$hoverCreateAccount: #F8FAFC;
+
 
 // Font:
 @font-face {
@@ -169,6 +171,8 @@ body {
                 &:hover {
                     box-shadow: 2px 2px 10px $shadowGray;
                     font-family: "finn-bold";
+                    background-color: $hoverCreateAccount;
+
                 }
             }
         }
@@ -190,3 +194,4 @@ body {
         text-align: center;
     }
 
+}
