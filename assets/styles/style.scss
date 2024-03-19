@@ -8,19 +8,38 @@ body {
 }
 
 
-// Search bar screenshot1
-.search {
-    margin-left: 5%;
-}
+
 
 // For the advertisement in Finn
-.card {
-    vertical-align: middle;
+.container {
     display: flex;
+    flex-direction: row; /* Making the text on the same line */
+    align-items: center; /* Align texts h1 and a vertically center */
+    &__link {
+          text-decoration: none;  
+          border-bottom: 1px solid transparent;  
+
+          &:hover {
+              border-color: common.$commonBlue;  // Underline when hovering over the text
+          }
+          
+       /* align-self:    Prøver å gjøre så teksten starter fra samme linje, men denne koden funka ikke?? */
+    }
+}
+
+// For the ads on Finn
+.card {
+    display: flex;
+    align-items: center;
+    
+
     &__ad {
         max-width: 100%;
         width: 25%;
         border-radius: 3%;
+    &__text {
+        text-align: center;
+    }
     }
 }
 

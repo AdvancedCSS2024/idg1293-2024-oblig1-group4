@@ -13,7 +13,10 @@ $hoverBlue: #003e9d;
 $inputGray: #fafafa;
 $stoneGrayText: #767676;
 $activeLogin: #6381b4;
-$hoverCreateAccount: #f8fafc;
+$hoverCreateAccount: #F8FAFC;
+$svgIcon: #47B9FF;
+
+
 
 // Font:
 @font-face {
@@ -46,18 +49,25 @@ body {
     max-width: 1010px;
     margin: 0 auto;
 
+            
     &__logo {
-        // width: 60px;
-        text-decoration: none;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        font-size: 13px;
-        margin-right: auto;
-        border-bottom: 2px solid transparent;
+    // width: 60px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    // font-size: 13px;
+    margin-right: auto;
+    border-bottom: 1.5px solid transparent; 
+    
         &:hover {
             border-color: $commonBlue;
         }
+    
+        &__text {
+            font-size: 10px;
+        }
+
     }
 
     &__icons {
@@ -66,23 +76,39 @@ body {
         align-items: center;
         justify-content: center;
         display: flex;
+
+        // font-size: 13px;       
+        border-bottom: 1.5px solid transparent; 
+
         font-size: 13px;
         border-bottom: 2px solid transparent;
+
         margin-left: 10px;
 
         &:hover {
             border-color: $commonBlue;
         }
+
+        &__text {
+            font-size: 10px;
+        }
     }
 }
 
+// All normal text
 p {
     color: $black;
     font-size: 13px;
     margin: 0 5px;
 }
 
+
+
+
+// For the 12 categories icons
+
 // For the categories icons
+
 
 .icons {
     display: grid;
@@ -91,26 +117,43 @@ p {
     &__svg {
         flex-direction: column;
         text-decoration: none;
+        /*  svg path {
+        stroke: #47B9FF; /* Changes the stroke color of the svg's, but then it doesnt work when hovering over it
+    } */
     }
+
+
     &__svg:hover {
         color: $stoneGrayText;
     }
 }
 
-.search {
+
+
+// Searchbar
+  .search {
+
     display: flex;
     align-items: center;
+    margin-left: 5%;
     &__bar {
         flex: 1; /*Make the input element take up the full widht of its container */
         &__icon {
             text-decoration: none;
+            border-bottom: 1px solid transparent; // Mulig dette må endres når jeg får flytta ikonet og tektsa ved siden av hverandre
+
+            &:hover {
+                border-color: $black;
+            }
         }
     }
-}
 
-input[type="text"] {
-    width: 90%; /* Make the input element take up the full width of its container */
-}
+  }
+
+  input[type="text"] {
+    width: 90%; /* Make the input element - searchbar take up the full width of its container */
+  }
+  
 
 // Login page (KAJA)
 
