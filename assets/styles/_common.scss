@@ -34,41 +34,96 @@ body {
     margin: 0;
 }
 
+
+
 // For the header in Screenshot 1
 .header {
+    border: 1px solid #333;
+}
+
+.navbar {
     background-color: $backgroundGray;
     font-size: 1.5em;
     display: flex;
-
+    max-width: 1010px;
+    margin: 0 auto;
+    
+        
     &__logo {
-        // width: 60px;
-        text-decoration: none;
-        display: flex;
-        font-size: 15px;
-        padding-right: 10%;
+    // width: 60px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 13px;
+    margin-right: auto;
+    border-bottom: 2px solid transparent; 
+    &:hover {
+        border-color: $commonBlue;
     }
+
+    }
+
+
 
     &__icons {
         // width: 50px;
-        display: flex;
-        font-size: 15px;
         text-decoration: none;
-        padding-left: 3%;
+        align-items: center;
+        justify-content: center;  
+        display: flex;
+        font-size: 13px;       
+        border-bottom: 2px solid transparent; 
+        margin-left: 10px;
+  
+        &:hover {
+            border-color: $commonBlue;
+        }
     }
 }
 
-// For the icons
+p {
+    color: $black;
+    font-size: 13px;
+    margin: 0 5px;
+}
+
+
+
+// For the categories icons
+
 .icons {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
     &__svg {
         flex-direction: column;
         text-decoration: none;
     }
+    &__svg:hover {
+        color: $stoneGrayText;
+    }
 }
 
-.search {
-    text-align: center;
-}
+
+
+
+  .search {
+    display: flex;
+    align-items: center;
+    &__bar {
+        flex: 1; /*Make the input element take up the full widht of its container */
+        &__icon {
+            text-decoration: none;
+        }
+    }
+  }
+  
+
+  input[type="text"] {
+    width: 90%; /* Make the input element take up the full width of its container */
+  }
+  
 
 // Login page (KAJA)
 
@@ -183,7 +238,7 @@ body {
                     font-family: "finn-bold";
                     background-color: $hoverCreateAccount;
                 }
-            }
+          
         }
     }
     .notifications-card {
