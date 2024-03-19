@@ -13,8 +13,7 @@ $hoverBlue: #003e9d;
 $inputGray: #fafafa;
 $stoneGrayText: #767676;
 $activeLogin: #6381b4;
-$hoverCreateAccount: #F8FAFC;
-
+$hoverCreateAccount: #f8fafc;
 
 // Font:
 @font-face {
@@ -40,14 +39,13 @@ body {
     background-color: $backgroundGray;
     font-size: 1.5em;
     display: flex;
-        
-    &__logo {
-    // width: 60px;
-    text-decoration: none;
-    display: flex;
-    font-size: 15px;
-    padding-right: 10%;
 
+    &__logo {
+        // width: 60px;
+        text-decoration: none;
+        display: flex;
+        font-size: 15px;
+        padding-right: 10%;
     }
 
     &__icons {
@@ -57,11 +55,7 @@ body {
         text-decoration: none;
         padding-left: 3%;
     }
-
-  
 }
-
-
 
 // For the icons
 .icons {
@@ -72,10 +66,9 @@ body {
     }
 }
 
-  .search {
+.search {
     text-align: center;
 }
-
 
 // Login page (KAJA)
 
@@ -132,6 +125,26 @@ body {
                 font-size: 14px;
                 line-height: 18px;
             }
+
+            &__checkbox {
+                &__input {
+                    width: 20px;
+                    height: 20px;
+                    border: 3px solid $shadowGray;
+                    border-radius: 1px;
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    -o-appearance: none;
+
+                    &:checked {
+                        background-color: $commonBlue;
+                        border: 3px solid $commonBlue;
+                        border-radius: 1px;
+                        color: $white;
+                    }
+                }
+            }
+
             &__submit {
                 border: none;
                 background-color: $commonBlue;
@@ -156,6 +169,7 @@ body {
                     color: $stoneGrayText;
                 }
             }
+
             &__create-account {
                 font-size: 17px;
                 margin: 16px 0 0;
@@ -168,26 +182,24 @@ body {
                     box-shadow: 2px 2px 10px $shadowGray;
                     font-family: "finn-bold";
                     background-color: $hoverCreateAccount;
-
                 }
             }
         }
     }
-}
-.notifications-card {
-    background-color: $aqua;
-    margin-top: 12%;
+    .notifications-card {
+        background-color: $aqua;
+        margin-top: 12%;
 
-    &__iphone {
-        width: 100%;
-        max-width: 200px;
-        margin: 0 auto;
+        &__iphone {
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto;
+        }
+
+        &__content {
+            padding: 0 10%;
+            font-family: "finn-regular";
+            text-align: center;
+        }
     }
-
-    &__content {
-        padding: 0 10%;
-        font-family: "finn-regular";
-        text-align: center;
-    }
-
 }
