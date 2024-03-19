@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 @font-face {
   font-family: "finn-regular";
   src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Light.woff2);
@@ -30,24 +30,30 @@ body {
   align-items: center;
   justify-content: center;
   display: flex;
-  font-size: 13px;
   margin-right: auto;
-  border-bottom: 2px solid transparent;
+  border-bottom: 1.5px solid transparent;
 }
 .navbar__logo:hover {
   border-color: #0063fb;
+}
+.navbar__logo__text {
+  font-size: 10px;
 }
 .navbar__icons {
   text-decoration: none;
   align-items: center;
   justify-content: center;
   display: flex;
+  border-bottom: 1.5px solid transparent;
   font-size: 13px;
   border-bottom: 2px solid transparent;
   margin-left: 10px;
 }
 .navbar__icons:hover {
   border-color: #0063fb;
+}
+.navbar__icons__text {
+  font-size: 10px;
 }
 
 p {
@@ -64,6 +70,9 @@ p {
 .icons__svg {
   flex-direction: column;
   text-decoration: none;
+  /*  svg path {
+      stroke: #47B9FF; /* Changes the stroke color of the svg's, but then it doesnt work when hovering over it
+  } */
 }
 .icons__svg:hover {
   color: #767676;
@@ -72,23 +81,32 @@ p {
 .search {
   display: flex;
   align-items: center;
+  margin-left: 5%;
 }
 .search__bar {
   flex: 1; /*Make the input element take up the full widht of its container */
 }
 .search__bar__icon {
   text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.search__bar__icon:hover {
+  border-color: black;
 }
 
 input[type=text] {
-  width: 90%; /* Make the input element take up the full width of its container */
+  width: 90%; /* Make the input element - searchbar take up the full width of its container */
+}
+
+.login-page {
+  padding: 40px;
 }
 
 .login-card {
   background-color: white;
   padding: 3%;
-  margin: 10% 5% 10% 0;
-  width: 40%;
+  margin: 5% 5% 10% 0;
+  width: 50%;
   border-radius: 10px;
   box-shadow: 0 10px 30px #adadad;
 }
@@ -110,42 +128,77 @@ input[type=text] {
   display: flex;
   flex-direction: column;
 }
+.login-card__main * {
+  padding-bottom: 7%;
+}
 .login-card__main__h1 {
   font-family: "finn-bold";
-  font-size: 34px;
+  font-size: 26px;
   line-height: 41px;
 }
 .login-card__main__form {
-  display: flex;
-  flex-direction: column;
-  font-size: "finn-regular";
-}
-.login-card__main__form__input {
-  background-color: #fafafa;
+  background-color: #e5e5e5;
   color: #767676;
-  vertical-align: text-top;
-  padding: 27px 12px 10px;
+  padding: 17px 12px 20px 5px;
   border: none;
-  text-align: start;
-  border-bottom: 1px #767676;
+  border-bottom: 1px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   font-size: 14px;
-  line-height: 18px;
 }
-.login-card__main__form__checkbox {
+.login-card__main__form:hover {
+  background-color: #cccccc;
+  color: #767676;
+  padding: 17px 12px 20px 5px;
+  border: none;
+  border-bottom: 1px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 14px;
+}
+.login-card__main__form:focus {
+  background-color: #e5e5e5;
+  color: #1d72db;
+  padding: 8px 12px 29px 5px;
+  border: none;
+  border-bottom: 3px solid #1d72db;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 12px;
+  outline: none;
+}
+.login-card__main__necesary {
+  padding-top: 3%;
+  color: #767676;
+}
+.login-card__main__forgotten-password {
+  color: #1d72db;
+  font-size: 15.2px;
+}
+.login-card__main__checkbox {
   display: flex;
   justify-content: left;
-  align-items: center;
+  align-items: start;
 }
-.login-card__main__form__checkbox__input {
+.login-card__main__checkbox__input {
   width: 20px;
   height: 20px;
   border-radius: 3px;
 }
+.login-card__main__checkbox__label {
+  font-size: 14px;
+  font-family: "finn-bold";
+  color: #767676;
+  padding-left: 2px;
+  padding-top: 4px;
+}
 .login-card__main__submit {
   border: none;
-  background-color: #0063fb;
+  background-color: #1d72db;
   color: white;
   font-size: 17px;
+  text-align: center;
+  font-family: "finn-bold";
   margin: 16px 0 0;
   padding: 16px;
   border-radius: 10px;
@@ -164,6 +217,7 @@ input[type=text] {
 }
 .login-card__main__create-account {
   font-size: 17px;
+  text-align: center;
   margin: 16px 0 0;
   padding: 16px;
   border-radius: 10px;
@@ -175,37 +229,76 @@ input[type=text] {
   font-family: "finn-bold";
   background-color: #f8fafc;
 }
-.login-card .notifications-card {
+
+.notifications-card {
   background-color: #f1f9ff;
-  margin-top: 12%;
+  padding-bottom: 20%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
-.login-card .notifications-card__iphone {
+.notifications-card__iphone {
   width: 100%;
   max-width: 200px;
+  padding-bottom: 3%;
   margin: 0 auto;
 }
-.login-card .notifications-card__content {
-  padding: 0 10%;
-  font-family: "finn-regular";
+.notifications-card__iphone__img {
+  display: block;
+  margin: 0 auto;
+}
+.notifications-card__content1 {
+  padding: 0px 0px 8px;
+  padding: 5px 32px;
   text-align: center;
+  color: #767676;
+  font-size: 16px;
+  line-height: 22px;
+}
+.notifications-card__content1__link {
+  color: #1d72db;
+}
+.notifications-card__content2 {
+  margin: 0px 0px 8px;
+  color: #767676;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  padding-top: 5px;
+}
+.notifications-card__content2__link {
+  text-decoration: none;
+  color: #1d72db;
 }
 
 body {
   margin: 0;
 }
 
-.search {
-  margin-left: 5%;
+.container {
+  display: flex;
+  flex-direction: row; /* Making the text on the same line */
+  align-items: center; /* Align texts h1 and a vertically center */
+}
+.container__link {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  /* align-self:    Prøver å gjøre så teksten starter fra samme linje, men denne koden funka ikke?? */
+}
+.container__link:hover {
+  border-color: #0063fb;
 }
 
 .card {
-  vertical-align: middle;
   display: flex;
+  align-items: center;
 }
 .card__ad {
   max-width: 100%;
   width: 25%;
   border-radius: 3%;
+}
+.card__ad__text {
+  text-align: center;
 }
 
 .login-page {
@@ -215,19 +308,30 @@ body {
   align-items: center;
 }
 
-h3 {
-  padding: 0 0 5% 0;
+.demo-body {
+  background-color: #0063fb;
+  padding: 10%;
 }
 
 .demo-main {
   padding: 10%;
+  background-color: white;
+  border-radius: 50px;
 }
 
-.login-buttons {
-  display: flex;
-  padding-bottom: 5%;
+.demo-h1 {
+  padding: 15px 0;
+  font-family: "finn-bold";
+  font-size: 250%;
 }
-.login-buttons__card {
-  padding: 0 5% 0 0;
+
+.demo-h2 {
+  padding-top: 10%;
+  -webkit-text-decoration: underline solid 10px #47b9ff;
+          text-decoration: underline solid 10px #47b9ff;
+  font-size: 30px;
+}
+
+h3 {
+  padding: 5% 0 2% 0;
 }/*# sourceMappingURL=style.css.map */
-
