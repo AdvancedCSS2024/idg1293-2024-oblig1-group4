@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "finn-regular";
   src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Light.woff2);
@@ -15,33 +14,73 @@ body {
 }
 
 .header {
+  border: 1px solid #333;
+}
+
+.navbar {
   background-color: #f6f8fb;
   font-size: 1.5em;
   display: flex;
+  max-width: 1010px;
+  margin: 0 auto;
 }
-.header__logo {
+.navbar__logo {
   text-decoration: none;
+  align-items: center;
+  justify-content: center;
   display: flex;
-  font-size: 15px;
-  padding-right: 10%;
+  font-size: 13px;
+  margin-right: auto;
+  border-bottom: 2px solid transparent;
 }
-.header__icons {
-  display: flex;
-  font-size: 15px;
+.navbar__logo:hover {
+  border-color: #0063fb;
+}
+.navbar__icons {
   text-decoration: none;
-  padding-left: 3%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 13px;
+  border-bottom: 2px solid transparent;
+  margin-left: 10px;
+}
+.navbar__icons:hover {
+  border-color: #0063fb;
+}
+
+p {
+  color: black;
+  font-size: 13px;
+  margin: 0 5px;
 }
 
 .icons {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: space-between;
 }
 .icons__svg {
   flex-direction: column;
   text-decoration: none;
 }
+.icons__svg:hover {
+  color: #767676;
+}
 
 .search {
-  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.search__bar {
+  flex: 1; /*Make the input element take up the full widht of its container */
+}
+.search__bar__icon {
+  text-decoration: none;
+}
+
+input[type=text] {
+  width: 90%; /* Make the input element take up the full width of its container */
 }
 
 .login-card {
@@ -91,22 +130,17 @@ body {
   font-size: 14px;
   line-height: 18px;
 }
+.login-card__main__form__checkbox {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
 .login-card__main__form__checkbox__input {
   width: 20px;
   height: 20px;
-  border: 3px solid #adadad;
-  border-radius: 1px;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -o-appearance: none;
+  border-radius: 3px;
 }
-.login-card__main__form__checkbox__input:checked {
-  background-color: #0063fb;
-  border: 3px solid #0063fb;
-  border-radius: 1px;
-  color: white;
-}
-.login-card__main__form__submit {
+.login-card__main__submit {
   border: none;
   background-color: #0063fb;
   color: white;
@@ -115,19 +149,19 @@ body {
   padding: 16px;
   border-radius: 10px;
 }
-.login-card__main__form__submit:hover {
+.login-card__main__submit:hover {
   background-color: #003e9d;
   box-shadow: 2px 2px 10px #adadad;
 }
-.login-card__main__form__submit:active {
+.login-card__main__submit:active {
   background-color: #6381b4;
   box-shadow: 2px 2px 10px #adadad;
 }
-.login-card__main__form__submit:visited {
+.login-card__main__submit:visited {
   background-color: #adadad;
   color: #767676;
 }
-.login-card__main__form__create-account {
+.login-card__main__create-account {
   font-size: 17px;
   margin: 16px 0 0;
   padding: 16px;
@@ -135,7 +169,7 @@ body {
   color: #0063fb;
   font-family: "finn-bold";
 }
-.login-card__main__form__create-account:hover {
+.login-card__main__create-account:hover {
   box-shadow: 2px 2px 10px #adadad;
   font-family: "finn-bold";
   background-color: #f8fafc;
