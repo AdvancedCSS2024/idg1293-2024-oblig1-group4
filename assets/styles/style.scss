@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: row; /* Making the text on the same line */
     align-items: center; /* Align texts h1 and a vertically center */
+    
     &__link {
         text-decoration: none;
         border-bottom: 1px solid transparent;
