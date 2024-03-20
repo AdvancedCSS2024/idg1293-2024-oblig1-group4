@@ -8,51 +8,55 @@
   <link rel="stylesheet" href="/assets/styles/style.css">
 </head>
 
-<body>
+<body class="demo-body">
   <!-- EDIT THIS PAGE TO SHOW HOW YOU USE ALL THE ELEMENTS IMPLEMENTED IN YOUR DESIGN SYSTEM  -->
   <main class="demo-main">
-    <h1>Elements we've used</h1>
+    <h1 class="demo-h1">Elements we've used</h1>
 
     <!--CECILIE-->
-    <h2>Buttons</h2>
+    <h2 class="demo-h2">Buttons</h2>
 
-    <div class="login-buttons">
-      <div class="login-buttons__card">
+
         <h3>Login button</h3>
-        <a class="login-card__main__form__submit">Logg inn</a>
-      </div>
+        <a class="login-card__main__submit">Logg på</a>
+     
 
-    <div class="login-buttons__card">
+    
         <h3>Create account button</h3>
-        <a class="login-card__main__form__create-account">Opprett ny konto</a>
-      </div>
+        <a class="login-card__main__create-account">Opprett ny konto</a>
+  
     </div>
 
-  <h3>Search bar</h3> 
+    <h3>Icons</h3>
+    <nav class="navbar">
+      <a class="navbar__icons" href="finn.no"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+          viewBox="0 0 24 24" part="w-icon-bell-24-part">
+          <title>Bjelle</title>
+          <path stroke="grey" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+            d="M10.01 21.782a2.11 2.11 0 0 0 1.992 1.467c.905 0 1.725-.605 1.993-1.467M12 3V.75M12 3c4.168 0 7.5 3.492 7.5 7.619C19.5 17.777 21 19 21 19H3s1.5-1.946 1.5-8.381C4.5 6.519 7.865 3 12 3">
+          </path>
+        </svg>
+        <p>Varslinger</p>
+      </a>
+    </nav>
+
+
+    <!--KAJA-->
+    <h2 class="demo-h2">Input</h2>
+
+    <h3>Search bar</h3>
     <form class="search__bar">
       <input type="text" placeholder="Søk etter ski eller smoking">
     </form>
- 
-   <h3>Icons</h3>
-    <nav class="navbar">
-      <a class="navbar__icons" href="finn.no"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" part="w-icon-bell-24-part"><title>Bjelle</title><path stroke="grey" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.01 21.782a2.11 2.11 0 0 0 1.992 1.467c.905 0 1.725-.605 1.993-1.467M12 3V.75M12 3c4.168 0 7.5 3.492 7.5 7.619C19.5 17.777 21 19 21 19H3s1.5-1.946 1.5-8.381C4.5 6.519 7.865 3 12 3"></path></svg><p>Varslinger</p></a>
-    </nav>
-   
-
-    <!--KAJA-->
-    <h2>Input</h2>
-
-    <h3>Searchbar</h3>
-
 
     <h3>Login input</h3>
-    <input class="login-card__main__form__input" type="text" value="Skriv inn ditt passord*" required>
+    <input class="login-card__main__form" type="text" value="Skriv inn din e-mail adresse*" required>
 
-    <h3>Tickbox</h3>
-    <input type="checkbox">
-
-
-
+    <h3>Checkbox</h3>
+    <div class="login-card__main__checkbox">
+      <input class="login-card__main__checkbox__input" type="checkbox" name="checkbox">
+      <label class="login-card__main__checkbox__label" for="">Hold meg innlogget</label>
+    </div>
 
     <h2></h2>
   </main>
