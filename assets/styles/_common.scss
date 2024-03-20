@@ -17,6 +17,8 @@ $hoverCreateAccount: #f8fafc;
 $svgIcon: #47b9ff;
 $linkBlue: #1d72db;
 $hoverInputGray: #cccccc;
+$borderColor: #c3ccd9;
+$shadowBlue: #93c5fd80; 
 
 // Font:
 @font-face {
@@ -112,7 +114,6 @@ p {
 }
 
 // For the 12 categories icons
-
 .icons {
     display: grid;
     grid-template-columns: repeat(6, minmax(10.4rem,1fr));
@@ -151,7 +152,7 @@ p {
         width: 100%;
         padding: 0.8rem 4rem 0.8rem 1rem;
         background-color: transparent;
-        border: 1px solid #c3ccd9;
+        border: 1px solid $borderColor;
         display: block;
         font-size: 1.6rem;
         

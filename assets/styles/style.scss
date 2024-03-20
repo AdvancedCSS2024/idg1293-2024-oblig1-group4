@@ -12,33 +12,45 @@ body {
     display: flex;
     flex-direction: row; /* Making the text on the same line */
     align-items: center; /* Align texts h1 and a vertically center */
+ 
     
     &__link {
         text-decoration: none;
         border-bottom: 1px solid transparent;
-
         &:hover {
             border-color: common.$commonBlue; // Underline when hovering over the text
         }
-
         /* align-self:    Prøver å gjøre så teksten starter fra samme linje, men denne koden funka ikke?? */
     }
 }
 
-// For the ads on Finn
+// For the  12 ads on Finn
 .card {
     display: flex;
     align-items: center;
 
-    &__ad {
-        max-width: 100%;
-        width: 25%;
-        border-radius: 3%;
-        &__text {
-            text-align: center;
+    &__wrapper {
+        flex: 1 0 30%; /* Adjust as needed */
+        text-align: center;
+        &:hover {
+            box-shadow: 0 0 20px 0 #93c5fd80;   /* Add shadow on the img when hovering */
         }
     }
+
+    &__ad {
+        max-width: 100%;
+        width: 90%;
+        border-radius: 2.5%;
+       
+    } /*SE HER!!*/
+
+    &__text {
+        text-align: left;
+        margin: 5px 0;
+    }
 }
+
+
 
 // LOGIN PAGE (KAJA)
 
