@@ -37,7 +37,7 @@ $shadowBlue: #93c5fd80;
     box-sizing: border-box;
 }
 
-// Finn sin rootsize. Kaja må endre sin side
+// Finn sin rootsize.
 html {
     font-size: 62.5%;
 }
@@ -51,7 +51,7 @@ body {
 
 // For the header in Screenshot 1
 .header {
-    border: 1px solid #333;
+    border-bottom: 1px solid #333;
 }
 
 .navbar {
@@ -67,9 +67,10 @@ body {
         align-items: center;
         justify-content: center;
         display: flex;
-        font-size: 12px;
+        //font-size: 12px;
         margin-right: auto;
         border-bottom: 1.5px solid transparent;
+       
 
         &:hover {
             border-color: $commonBlue;
@@ -87,9 +88,10 @@ body {
         justify-content: center;
         display: flex; 
         border-bottom: 1.5px solid transparent;
-        font-size: 12px;
-        border-bottom: 2px solid transparent;
+        //font-size: 12px;
         margin-left: 10px;
+
+ 
 
         &:hover {
             border-color: $commonBlue;
@@ -123,6 +125,7 @@ p {
     &__svg {
         flex-direction: column;
         text-decoration: none;
+        padding-top: 30%;
 
         /*  svg path {
         stroke: #47B9FF; /* Changes the stroke color of the svg's, but then it doesnt work when hovering over it
@@ -153,13 +156,16 @@ p {
         padding: 0.8rem 4rem 0.8rem 1rem;
         background-color: transparent;
         border: 1px solid $borderColor;
-        display: block;
         font-size: 1.6rem;
         
         &__icon {
-            text-decoration: none;
-            border-bottom: 1px solid transparent; // Mulig dette må endres når jeg får flytta ikonet og tektsa ved siden av hverandre
+            text-decoration: none;           
+            display: flex;  // Put the map and text next to eachother 
+           
+        }
 
+        &__map {
+            border-bottom: 1px solid transparent; // Mulig dette må endres når jeg får flytta ikonet og tektsa ved siden av hverandre
             &:hover {
                 border-color: $black;
             }
@@ -175,7 +181,7 @@ p {
         font-size: .8rem;
         border: 0;
         display: flex;
-        align-items: center;
+        //align-items: center;
         justify-content: center;
     }
 }
