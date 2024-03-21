@@ -17,6 +17,8 @@ $hoverCreateAccount: #f8fafc;
 $svgIcon: #47b9ff;
 $linkBlue: #1d72db;
 $hoverInputGray: #cccccc;
+$borderColor: #c3ccd9;
+$shadowBlue: #93c5fd80; 
 
 // Font:
 @font-face {
@@ -30,21 +32,31 @@ $hoverInputGray: #cccccc;
 }
 
 // Cecilie
-body {
-    margin: 0;
+
+* {
+    box-sizing: border-box;
+}
+
+// Finn sin rootsize.
+html {
+    font-size: 62.5%;
+}
+
+body {  
     background-color: $backgroundGray;
     font-family: "finn-regular";
-    margin: 0;
+  
 }
+
 
 // For the header in Screenshot 1
 .header {
-    border: 1px solid #333;
+    border-bottom: 1px solid #333;
 }
 
 .navbar {
     background-color: $backgroundGray;
-    font-size: 1.5em;
+    font-size: 16rem;
     display: flex;
     max-width: 1010px;
     margin: 0 auto;
@@ -55,9 +67,10 @@ body {
         align-items: center;
         justify-content: center;
         display: flex;
-        // font-size: 13px;
+        //font-size: 12px;
         margin-right: auto;
         border-bottom: 1.5px solid transparent;
+       
 
         &:hover {
             border-color: $commonBlue;
@@ -73,15 +86,12 @@ body {
         text-decoration: none;
         align-items: center;
         justify-content: center;
-        display: flex;
-
-        // font-size: 13px;
+        display: flex; 
         border-bottom: 1.5px solid transparent;
-
-        font-size: 13px;
-        border-bottom: 2px solid transparent;
-
+        //font-size: 12px;
         margin-left: 10px;
+
+ 
 
         &:hover {
             border-color: $commonBlue;
@@ -93,6 +103,11 @@ body {
     }
 }
 
+// For the body 
+.main {
+    margin: 0 90px;
+}
+
 // All normal text
 p {
     color: $black;
@@ -101,16 +116,17 @@ p {
 }
 
 // For the 12 categories icons
-
-// For the categories icons
-
 .icons {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, minmax(10.4rem,1fr));
     justify-content: space-between;
+    text-align: center;
+    padding: 16px 4px;
     &__svg {
         flex-direction: column;
         text-decoration: none;
+        padding-top: 30%;
+
         /*  svg path {
         stroke: #47B9FF; /* Changes the stroke color of the svg's, but then it doesnt work when hovering over it
     } */
@@ -119,29 +135,60 @@ p {
     &__svg:hover {
         color: $stoneGrayText;
     }
+
+   
 }
 
 // Searchbar
 .search {
     display: flex;
-    align-items: center;
-    margin-left: 5%;
+    justify-content: space-between;
+    width: calc(100% - 4rem);
+    margin-top: 4rem;
+    
+    &__container {
+        position: relative; 
+        width: calc(100% - 4rem); 
+    }
+    
     &__bar {
-        flex: 1; /*Make the input element take up the full widht of its container */
+        width: 100%;
+        padding: 0.8rem 4rem 0.8rem 1rem;
+        background-color: transparent;
+        border: 1px solid $borderColor;
+        font-size: 1.6rem;
+        
         &__icon {
-            text-decoration: none;
-            border-bottom: 1px solid transparent; // Mulig dette må endres når jeg får flytta ikonet og tektsa ved siden av hverandre
+            text-decoration: none;           
+            display: flex;  // Put the map and text next to eachother 
+           
+        }
 
+        &__map {
+            border-bottom: 1px solid transparent; // Mulig dette må endres når jeg får flytta ikonet og tektsa ved siden av hverandre
             &:hover {
                 border-color: $black;
             }
         }
     }
+    &__button {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 4rem;
+        background-color: transparent;
+        font-size: .8rem;
+        border: 0;
+        display: flex;
+        //align-items: center;
+        justify-content: center;
+    }
 }
 
-input[type="text"] {
-    width: 90%; /* Make the input element - searchbar take up the full width of its container */
-}
+
+
+
 
 // Login page (KAJA)
 .login-page {
