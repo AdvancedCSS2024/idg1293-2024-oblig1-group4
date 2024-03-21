@@ -28,21 +28,24 @@ body {
 .card {
     display: flex;
     align-items: center;
+    
 
     &__wrapper {
         flex: 1 0 30%; /* Adjust as needed */
         text-align: center;
-        &:hover {
-            box-shadow: 0 0 20px 0 #93c5fd80;   /* Add shadow on the img when hovering */
-        }
+       
     }
 
     &__ad {
         max-width: 100%;
         width: 90%;
         border-radius: 2.5%;
+        &:hover {
+            box-shadow: 0 0 20px 0 #93c5fd80;   /* Add shadow on the img when hovering */
+            border-style: 2px solid #89befb80;   /* Doesnt do anything yet */
+        }
        
-    } /*SE HER!!*/
+    } 
 
     &__text {
         text-align: left;
