@@ -157,16 +157,18 @@ p {
         background-color: transparent;
         border: 1px solid $borderColor;
         font-size: 1.6rem;
+        border-radius: 4px;    // Smoothes the corners around the searchbar
         
         &__icon {
             text-decoration: none;           
             display: flex;  // Put the map and text next to eachother 
+            margin-left: 3.2rem;
            
         }
 
         &__map {
-            border-bottom: 1px solid transparent; // Mulig dette må endres når jeg får flytta ikonet og tektsa ved siden av hverandre
-            &:hover {
+            border-bottom: 1px solid transparent;       
+                &:hover {
                 border-color: $black;
             }
         }
