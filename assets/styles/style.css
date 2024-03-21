@@ -1,1 +1,377 @@
-@font-face{font-family:"finn-regular";src:url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Light.woff2)}@font-face{font-family:"finn-bold";src:url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2)}*{box-sizing:border-box}html{font-size:62.5%}body{background-color:#f6f8fb;font-family:"finn-regular"}.header{border-bottom:1px solid #333}.navbar{background-color:#f6f8fb;font-size:16rem;display:flex;max-width:1010px;margin:0 auto}.navbar__logo{text-decoration:none;align-items:center;justify-content:center;display:flex;margin-right:auto;border-bottom:1.5px solid rgba(0,0,0,0)}.navbar__logo:hover{border-color:#0063fb}.navbar__logo__text{font-size:10px}.navbar__icons{text-decoration:none;align-items:center;justify-content:center;display:flex;border-bottom:1.5px solid rgba(0,0,0,0);margin-left:10px}.navbar__icons:hover{border-color:#0063fb}.navbar__icons__text{font-size:10px}.main{margin:0 90px}p{color:#000;font-size:13px;margin:0 5px}.icons{display:grid;grid-template-columns:repeat(6, minmax(10.4rem, 1fr));justify-content:space-between;text-align:center;padding:16px 4px}.icons__svg{flex-direction:column;text-decoration:none;padding-top:30%}.icons__svg:hover{color:#767676}.search{display:flex;justify-content:space-between;width:calc(100% - 4rem);margin-top:4rem}.search__container{position:relative;width:calc(100% - 4rem)}.search__bar{width:100%;padding:.8rem 4rem .8rem 1rem;background-color:rgba(0,0,0,0);border:1px solid #c3ccd9;font-size:1.6rem;border-radius:4px}.search__bar__icon{text-decoration:none;display:flex;margin-left:3.2rem}.search__bar__map{border-bottom:1px solid rgba(0,0,0,0)}.search__bar__map:hover{border-color:#000}.search__button{position:absolute;top:0;bottom:0;right:0;width:4rem;background-color:rgba(0,0,0,0);font-size:.8rem;border:0;display:flex;justify-content:center}.login-page{padding:40px}.login-card{background-color:#fff;padding:3%;margin:5% 5% 10% 0;width:50%;border-radius:10px;box-shadow:0 10px 30px #adadad}.login-card__nav{display:flex;margin:0 auto;justify-content:space-between;align-items:center}.login-card__nav__finn-logo img{width:100%;max-width:40px}.login-card__nav__schibsted-logo img{width:100%;max-width:110px}.login-card__main{display:flex;flex-direction:column}.login-card__main *{padding-bottom:7%}.login-card__main__h1{font-family:"finn-bold";font-size:26px;line-height:41px}.login-card__main__form{background-color:#e5e5e5;color:#767676;padding:17px 12px 20px 5px;border:none;border-bottom:1px solid #000;border-top-left-radius:5px;border-top-right-radius:5px;font-size:14px}.login-card__main__form:hover{background-color:#ccc;color:#767676;padding:17px 12px 20px 5px;border:none;border-bottom:1px solid #000;border-top-left-radius:5px;border-top-right-radius:5px;font-size:14px}.login-card__main__form:focus{background-color:#e5e5e5;color:#1d72db;padding:8px 12px 29px 5px;border:none;border-bottom:3px solid #1d72db;border-top-left-radius:5px;border-top-right-radius:5px;font-size:12px;outline:none}.login-card__main__necesary{padding-top:3%;color:#767676}.login-card__main__forgotten-password{color:#1d72db;font-size:15.2px}.login-card__main__checkbox{display:flex;justify-content:left;align-items:start}.login-card__main__checkbox__input{width:20px;height:20px;border-radius:3px}.login-card__main__checkbox__label{font-size:14px;font-family:"finn-bold";color:#767676;padding-left:2px;padding-top:4px}.login-card__main__submit{border:none;background-color:#1d72db;color:#fff;font-size:17px;text-align:center;font-family:"finn-bold";margin:16px 0 0;padding:16px;border-radius:10px}.login-card__main__submit:hover{background-color:#003e9d;box-shadow:2px 2px 10px #adadad}.login-card__main__submit:active{background-color:#6381b4;box-shadow:2px 2px 10px #adadad}.login-card__main__submit:visited{background-color:#adadad;color:#767676}.login-card__main__create-account{font-size:17px;text-align:center;margin:16px 0 0;padding:16px;border-radius:10px;color:#0063fb;font-family:"finn-bold"}.login-card__main__create-account:hover{box-shadow:2px 2px 10px #adadad;font-family:"finn-bold";background-color:#f8fafc}.notifications-card{background-color:#f1f9ff;padding-bottom:20%;overflow-x:hidden;overflow-y:auto}.notifications-card__iphone{width:100%;max-width:200px;padding-bottom:3%;margin:0 auto}.notifications-card__iphone__img{display:block;margin:0 auto}.notifications-card__content1{padding:0px 0px 8px;padding:5px 32px;text-align:center;color:#767676;font-size:16px;line-height:22px}.notifications-card__content1__link{color:#1d72db}.notifications-card__content2{margin:0px 0px 8px;color:#767676;font-size:16px;line-height:22px;text-align:center;padding-top:5px}.notifications-card__content2__link{text-decoration:none;color:#1d72db}body{margin:0}.container{display:flex;flex-direction:row;align-items:center}.container__link{text-decoration:none;border-bottom:1px solid rgba(0,0,0,0)}.container__link:hover{border-color:#0063fb}.card{display:flex;align-items:center}.card__wrapper{flex:1 0 30%;text-align:center}.card__ad{max-width:100%;width:90%;border-radius:2.5%}.card__ad:hover{box-shadow:0 0 20px 0 rgba(147,197,253,.5019607843);border-style:2px solid rgba(137,190,251,.5019607843)}.card__text{text-align:left;margin:5px 0;font-weight:bold}.login-page{display:flex;flex-direction:row-reverse;justify-content:center;align-items:center}.demo-body{background-color:#0063fb;padding:10%}.demo-main{padding:10%;background-color:#fff;border-radius:50px}.demo-h1{padding:15px 0;font-family:"finn-bold";font-size:250%}.demo-h2{padding-top:10%;text-decoration:underline solid 10px #47b9ff;font-size:30px}h3{padding:5% 0 2% 0}/*# sourceMappingURL=style.css.map */
+
+@charset "UTF-8";
+@font-face {
+  font-family: "finn-regular";
+  src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Light.woff2);
+}
+@font-face {
+  font-family: "finn-bold";
+  src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2);
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f6f8fb;
+  font-family: "finn-regular";
+}
+
+.header {
+  border-bottom: 1px solid #333;
+}
+
+.navbar {
+  background-color: #f6f8fb;
+  font-size: 16rem;
+  display: flex;
+  max-width: 1010px;
+  margin: 0 auto;
+}
+.navbar__logo {
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right: auto;
+  border-bottom: 1.5px solid transparent;
+}
+.navbar__logo:hover {
+  border-color: #0063fb;
+}
+.navbar__logo__text {
+  font-size: 10px;
+}
+.navbar__icons {
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-bottom: 1.5px solid transparent;
+  margin-left: 10px;
+}
+.navbar__icons:hover {
+  border-color: #0063fb;
+}
+.navbar__icons__text {
+  font-size: 10px;
+}
+
+.main {
+  margin: 0 90px;
+}
+
+p {
+  color: black;
+  font-size: 13px;
+  margin: 0 5px;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(10.4rem, 1fr));
+  justify-content: space-between;
+  text-align: center;
+  padding: 16px 4px;
+}
+.icons__svg {
+  flex-direction: column;
+  text-decoration: none;
+  padding-top: 30%;
+  /*  svg path {
+      stroke: #47B9FF; /* Changes the stroke color of the svg's, but then it doesnt work when hovering over it
+  } */
+}
+.icons__svg:hover {
+  color: #767676;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 4rem);
+  margin-top: 4rem;
+}
+.search__container {
+  position: relative;
+  width: calc(100% - 4rem);
+}
+.search__bar {
+  width: 100%;
+  padding: 0.8rem 4rem 0.8rem 1rem;
+  background-color: transparent;
+  border: 1px solid #c3ccd9;
+  font-size: 1.6rem;
+}
+.search__bar__icon {
+  text-decoration: none;
+  display: flex;
+}
+.search__bar__map {
+  border-bottom: 1px solid transparent;
+}
+.search__bar__map:hover {
+  border-color: black;
+}
+.search__button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 4rem;
+  background-color: transparent;
+  font-size: 0.8rem;
+  border: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.login-card {
+  background-color: white;
+  padding: 3%;
+  margin: 5% 5% 10% 0;
+  width: 470px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px #adadad;
+  max-width: 50%;
+}
+.login-card__nav {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-card__nav__finn-logo img {
+  width: 100%;
+  max-width: 40px;
+}
+.login-card__nav__schibsted-logo img {
+  width: 100%;
+  max-width: 110px;
+}
+.login-card__main {
+  display: flex;
+  flex-direction: column;
+}
+.login-card__main * {
+  padding-bottom: 5%;
+}
+.login-card__main__h1 {
+  font-family: "finn-bold";
+  font-size: 26px;
+  line-height: 25px;
+}
+.login-card__main__form {
+  background-color: #e5e5e5;
+  color: #767676;
+  padding: 17px 12px 20px 5px;
+  border: none;
+  border-bottom: 1px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 14px;
+}
+.login-card__main__form:hover {
+  background-color: #cccccc;
+  color: #767676;
+  padding: 17px 12px 20px 5px;
+  border: none;
+  border-bottom: 1px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 14px;
+}
+.login-card__main__form:focus {
+  background-color: #e5e5e5;
+  color: #1d72db;
+  padding: 8px 12px 29px 5px;
+  border: none;
+  border-bottom: 3px solid #1d72db;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 12px;
+  outline: none;
+}
+.login-card__main__necesary {
+  padding-top: 3%;
+  color: #767676;
+}
+.login-card__main__forgotten-password {
+  color: #1d72db;
+  font-size: 15.2px;
+}
+.login-card__main__checkbox {
+  display: flex;
+  justify-content: left;
+  align-items: start;
+}
+.login-card__main__checkbox__input {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+.login-card__main__checkbox__label {
+  font-size: 14px;
+  font-family: "finn-bold";
+  color: #767676;
+  padding-left: 2px;
+  padding-top: 4px;
+}
+.login-card__main__submit {
+  border: none;
+  background-color: #1d72db;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  font-family: "finn-bold";
+  margin: 16px 0 0;
+  padding: 16px;
+  border-radius: 10px;
+}
+.login-card__main__submit:hover {
+  background-color: #003e9d;
+  box-shadow: 2px 2px 10px #adadad;
+}
+.login-card__main__submit:active {
+  background-color: #6381b4;
+  box-shadow: 2px 2px 10px #adadad;
+}
+.login-card__main__submit:visited {
+  background-color: #adadad;
+  color: #767676;
+}
+.login-card__main__create-account {
+  font-size: 17px;
+  text-align: center;
+  margin: 16px 0 0;
+  padding: 16px;
+  border-radius: 10px;
+  color: #0063fb;
+  font-family: "finn-bold";
+}
+.login-card__main__create-account:hover {
+  box-shadow: 2px 2px 10px #adadad;
+  font-family: "finn-bold";
+  background-color: #f8fafc;
+}
+
+.notifications-card {
+  background-color: #f1f9ff;
+  margin-bottom: 150px;
+  max-width: 600px;
+}
+.notifications-card__iphone {
+  width: 100%;
+  max-width: 200px;
+  padding-bottom: 3%;
+  margin: 0 auto;
+}
+.notifications-card__iphone__img {
+  display: block;
+  margin: 0 auto;
+}
+.notifications-card__content1 {
+  padding: 0px 0px 8px;
+  padding: 5px 32px;
+  text-align: center;
+  color: #767676;
+  font-size: 16px;
+  line-height: 22px;
+}
+.notifications-card__content1__link {
+  color: #1d72db;
+}
+.notifications-card__content2 {
+  margin: 0px 0px 8px;
+  color: #767676;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  padding-top: 5px;
+}
+.notifications-card__content2__link {
+  text-decoration: none;
+  color: #1d72db;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row; /* Making the text on the same line */
+  align-items: center; /* Align texts h1 and a vertically center */
+}
+.container__link {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  /* align-self:    Prøver å gjøre så teksten starter fra samme linje, men denne koden funka ikke?? */
+}
+.container__link:hover {
+  border-color: #0063fb;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+}
+.card__wrapper {
+  flex: 1 0 30%; /* Adjust as needed */
+  text-align: center;
+}
+.card__ad {
+  max-width: 100%;
+  width: 90%;
+  border-radius: 2.5%;
+}
+.card__ad:hover {
+  box-shadow: 0 0 20px 0 rgba(147, 197, 253, 0.5019607843); /* Add shadow on the img when hovering */
+  border-style: 2px solid rgba(137, 190, 251, 0.5019607843); /* Doesnt do anything yet */
+}
+.card__text {
+  text-align: left;
+  margin: 5px 0;
+}
+
+.login-page {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 30px 20px;
+  margin: 0 auto;
+}
+
+.demo-body {
+  background-color: #0063fb;
+  padding: 10%;
+}
+
+.demo-main {
+  padding: 10%;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.demo-h1 {
+  padding: 15px 0;
+  font-family: "finn-bold";
+  font-size: 250%;
+}
+
+.demo-h2 {
+  padding-top: 10%;
+  -webkit-text-decoration: underline solid 10px #47b9ff;
+          text-decoration: underline solid 10px #47b9ff;
+  font-size: 30px;
+}
+
+h3 {
+  padding: 5% 0 2% 0;
+}/*# sourceMappingURL=style.css.map */
+
